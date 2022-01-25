@@ -31,14 +31,14 @@ diamonds_subset <- diamonds %>% filter(carat > 0.2 | cut == "Ideal")
 ggplot(data=diamonds_subset, mapping=aes(x=depth, y=price)) +
 geom_point()
 
+
 ```
 
 ## STEP 7: Uh oh, merge conflicts!
 
 ```{r break-it-1}
-### Both partners - delete this comment, then write some code here
-### to plot, summarize, calculate something simple using the diamonds
-### dataset.
+ggplot(data = diamonds, aes(x = cut, y = price)) +
+  geom_jitter()
 
 
 ```
