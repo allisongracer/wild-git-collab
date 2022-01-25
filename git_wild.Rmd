@@ -40,7 +40,7 @@ geom_point()
 ggplot(data = diamonds, aes(x = cut, y = price)) +
   geom_jitter()
 
-
+#more changes made to create conflict
 ```
 
 ## STEP 11: And even more merge conflicts!
