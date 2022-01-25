@@ -27,6 +27,8 @@ ggplot(data = diamonds, aes(x = carat, y = price)) +
 ### ggplot2 package) and create a subset based on filtering, e.g., 
 ### size greater than 1 carat or cut is "Ideal"
 
+
+=======
 diamonds_subset <- diamonds %>% filter(carat > 0.2 | cut == "Ideal")
 ggplot(data=diamonds_subset, mapping=aes(x=depth, y=price)) +
 geom_point()
